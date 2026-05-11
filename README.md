@@ -1,6 +1,7 @@
 # MYCELIUM — Evolutionary Software Runtime
 
-<img width="1599" height="748" alt="image" src="https://github.com/user-attachments/assets/c5425757-0c83-4805-ab54-9ac53f3c70e5" />
+<img width="666" height="375" alt="output-onlinepngtools (1)" src="https://github.com/user-attachments/assets/06ac8cc5-43f2-4c52-bba2-6d3c539b7d2c" />
+
 
 
 > A production-grade evolutionary software runtime where software behaves like a living adaptive organism.

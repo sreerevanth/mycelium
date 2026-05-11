@@ -1,5 +1,6 @@
 # MYCELIUM — Evolutionary Software Runtime
-<img width="664" height="376" alt="WhatsApp Image 2026-05-11 at 1 48 28 PM" src="https://github.com/user-attachments/assets/f35095b7-d8da-4626-a3fc-a21eec2d7932" />
+<img width="664" height="376" alt="mycelium-removebg-preview" src="https://github.com/user-attachments/assets/bf0514aa-7779-46de-96ca-7b547f76aeb0" />
+
 
 An autonomous evolutionary runtime that continuously generates, mutates, benchmarks, and evolves software implementations. Not an AI wrapper. A runtime + execution substrate + evolutionary engine.
 

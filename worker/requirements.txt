@@ -1,0 +1,14 @@
+# Worker dependencies
+asyncio-throttle==1.0.2
+docker==7.1.0
+httpx==0.27.2
+pydantic==2.9.2
+pydantic-settings==2.5.2
+redis[hiredis]==5.1.1
+sqlalchemy[asyncio]==2.0.36
+asyncpg==0.29.0
+structlog==24.4.0
+python-dotenv==1.0.1
+tenacity==9.0.0
+aiofiles==24.1.0
+psutil==6.0.0

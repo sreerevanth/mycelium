@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --void: #020408;
+  --deep: #050d12;
+  --dark: #0a1a20;
+  --surface: #132d38;
+  --border: #1a3d4a;
+  --accent: #5bbdd6;
+  --glow: #a0e8f5;
+  --spore: #5abb60;
+  --extinction: #bb5a5a;
+  --dominant: #bb960a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--void);
+  color: var(--glow);
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Mycelium substrate background */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(91, 189, 214, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(91, 189, 214, 0.03) 1px, transparent 1px);
+  background-size: 24px 24px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--deep);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* Selection */
+::selection {
+  background: rgba(91, 189, 214, 0.3);
+  color: var(--glow);
+}
+
+/* React Flow overrides */
+.react-flow__renderer {
+  background: transparent !important;
+}
+.react-flow__background {
+  background: transparent !important;
+}
+
+/* Genome node glow effects */
+@keyframes genome-pulse {
+  0%, 100% { box-shadow: 0 0 8px rgba(91, 189, 214, 0.4); }
+  50% { box-shadow: 0 0 20px rgba(91, 189, 214, 0.8), 0 0 40px rgba(91, 189, 214, 0.3); }
+}
+
+@keyframes dominant-pulse {
+  0%, 100% { box-shadow: 0 0 8px rgba(187, 150, 10, 0.4); }
+  50% { box-shadow: 0 0 24px rgba(187, 150, 10, 1), 0 0 48px rgba(187, 150, 10, 0.4); }
+}
+
+@keyframes extinction-flash {
+  0% { box-shadow: 0 0 0px rgba(187, 90, 90, 0); }
+  50% { box-shadow: 0 0 30px rgba(187, 90, 90, 1), 0 0 60px rgba(187, 90, 90, 0.6); }
+  100% { box-shadow: 0 0 0px rgba(187, 90, 90, 0); opacity: 0; }
+}
+
+.genome-node-active {
+  animation: genome-pulse 2s ease-in-out infinite;
+}
+.genome-node-dominant {
+  animation: dominant-pulse 1.5s ease-in-out infinite;
+}
+.genome-node-extinct {
+  animation: extinction-flash 1s ease-out forwards;
+}

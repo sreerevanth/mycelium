@@ -1,5 +1,6 @@
 # MYCELIUM — Evolutionary Software Runtime
-<img width="1600" height="900" alt="WhatsApp Image 2026-05-11 at 2 31 33 PM" src="https://github.com/user-attachments/assets/2c4e1ab8-e37c-4aa1-afcb-25d7bfc6c552" />
+<img width="666" height="375" alt="output-onlinepngtools" src="https://github.com/user-attachments/assets/e379ed04-6b92-43ab-9acd-e12501e69f28" />
+
 
 
 
